@@ -1,14 +1,19 @@
 import express		from 'express';
 import * as routes	from './routes';
+import config		from './config';
 
-const APP  = express();
+const APP = express();
 
-APP.get( '/', routes.getAll );
+routes.connection();
 
-APP.get( '/items', routes.getAll );
+APP.get( '/', routes.getItems );
 
-APP.get( '/item/:id', routes.getItemById );
+APP.get( '/items', routes.getItems );
 
-APP.listen( 8080, () => {
-	console.log( 'Server is running on port 8080' );
+APP.get( '/items/:id', routes.getItem );
+
+APP.delete( '/items/:id', routes.deleteItem );
+
+APP.listen( config.serverPort, () => {
+	console.log( `Server is running on port ${config.serverPort}` );
 });

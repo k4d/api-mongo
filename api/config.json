@@ -1,0 +1,9 @@
+{
+	"apiPrefix" : "http://localhost",
+	"serverPort" : 8080,
+	"db" : {
+		"name" : "items",
+		"host" : "localhost",
+		"port" : 21017
+	}
+}
