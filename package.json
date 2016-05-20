@@ -1,0 +1,24 @@
+{
+  "name": "api-mongo",
+  "version": "1.0.0",
+  "description": "Simple REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4d/api-mongo.git"
+  },
+  "keywords": [],
+  "author": "Mikalai Siskevich <n.siskevich@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k4d/api-mongo/issues"
+  },
+  "homepage": "https://github.com/k4d/api-mongo#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.17"
+  }
+}
