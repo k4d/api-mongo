@@ -12,6 +12,8 @@ APP.get( '/items', routes.getItems );
 
 APP.get( '/items/:id', routes.getItem );
 
+APP.post( '/item', routes.createItem );
+
 APP.delete( '/items/:id', routes.deleteItem );
 
 APP.listen( config.serverPort, () => {

@@ -16,6 +16,18 @@ export function getItemById ( id ) {
 	return Item.findById( id );
 }
 
+export function createItem ( data ) {
+
+	let item = new Item({
+		key			: data.key,
+		title		: data.title,
+		description	: data.description,
+		createdAt	: new Date()
+	});
+
+	return item.save();
+}
+
 export function deleteItem ( id ) {
 	return Item.findById( id ).remove();
 }
